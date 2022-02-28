@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(253, 244, 231);
+}
+h1,h2,h3,h4,h5,p,span,small,a{
+    font-family: 'Akaya Telivigala','Bangers', cursive ;
+}
+header {
+    background: #2b323a;
+}
+header h1 {
+    color: rgba(255, 255, 255, 0.801);
+}
+header nav ul li a {
+    color: white;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 0 10px;
+    transition: .3s linear;
+}
+nav ul li a:hover {
+    color: yellow;
+}
+.banner {
+    background: black;
+    background-image: url(img/fondo4.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+}
+.banner:before {
+    content: "";
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: black;
+    opacity: .6;
+    z-index: 0;
+}
+.info-banner {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+.info-banner .container-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: scale(0.5);
+    background: white;
+    
+}
+.info-banner .container-image img {
+    width: 300px;
+}
+.info-banner p {
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 32px;
+    font-weight: bold;
+}
+.info-banner small {
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+.info-banner button {
+    background: red;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+    border: none;
+}
+.info-banner button:hover {
+    background: rgb(232, 64, 92);
+}
+.social ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+
+}
+.social ul li  {
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
+    background: black;
+}
+.social ul li a {
+    background-color: beige;
+}
+
+/* ---------------MAIN SECTION---------- */
+
+.sobre-mi {
+    width: 80%;
+    margin: 0 auto;
+}
+.sobre-mi h3 {
+    margin-top: 50px;
+    font-size: 35px;
+}
+.sobre-mi .socontainer-img {
+}
+.conocimientos .container-img img {
+   
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: scale(0.5);
+    background: white;
+}
+.conocimientos {
+    display: flex;
+    justify-content: space-around;
+}
+.conocimientos .main {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    border-radius: 15px;
+    background-color: white;
+}
+.main .ddp {
+    text-align: center;
+}
+.main .ddp p {
+    max-width: 300px;
+    padding: 10px 15px;
+}
+.main .ddp button {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+    border: none;
+}
+.main .ddp button:hover {
+    background-color:  rgb(232, 64, 92) ;
+}
+.section-main form meter::-webkit-meter-bar {
+    background-color: rgb(230, 174, 22);
+
+}
+.sectionAja {
+    width: 80%;
+    margin: 0 auto;
+}
+.sectionAja .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.sectionAja .container div {
+    text-align: center;
+}
+.sectionAja .container img {
+    width: 35px;
+}
